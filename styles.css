@@ -165,6 +165,15 @@ ul.skills {
   transform: scale(1.5) skewX(-5deg);
 }
 
+.skills li {
+  height: 85px;
+}
+
+.skills img {
+  max-width: 100px;
+  height: 75px;
+}
+
 footer {
   width: 100%;
   min-height: 30px;
