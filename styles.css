@@ -75,6 +75,7 @@ header .profile-image {
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  box-shadow: 1px 1px 20px white;
 }
 .tag {
   background-color: #efefef;
@@ -83,7 +84,14 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  cursor: default;
+  transition: all .5s;
 }
+
+.tag:hover {
+  transform: scale(1.1);
+}
+
 .location {
   background-color: #222;
   color: yellow;
@@ -118,6 +126,20 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+.websites {
+  list-style-type:none;
+}
+
+.websites li:nth-child(even) {
+  font-style: italic;
+  color: gray;
+  padding-left: 10px;
+}
+
+.websites li:nth-child(odd) {
+  font-size: 1.3em;
 }
 
 footer {
@@ -167,6 +189,12 @@ a.social:hover {
   clear: both;
 }
 
+span.strike {
+  text-decoration:line-through;
+  font-style:italic;
+  color: gray;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 
@@ -190,7 +218,7 @@ a.social:hover {
 
 
   main {
-    padding-top: 20px;
+    padding-top: 40px;
   }
 
   main p {
